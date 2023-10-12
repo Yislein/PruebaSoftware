@@ -9,61 +9,62 @@
 </head>
 <body>
     <center>
-        <img src="img/uacm_cuau.jpg" alt="plantel">
+        <div class="img_portada">
+            <img src="img/uacm_cuau.jpg"  alt="plantel" height="350px" width="1150px"  >
+
+        </div>
+        
     </center>
     <main class="contenedor">
         <center>
-            <article class="carta">
+            <article class="carta" >
                 <img src="img/logof.png" alt="portada" height="145px" class="carta-cabeza">
                 <div class="carta-cuerpo">
                     <div class="carta-cuerpo-contimg">
-                        <img src="img/arroz.jpg" alt="portada" class="carta-cuerpo-contimg-img" width="150px">
-                     </div>
+                         <img src="img/arroz.jpg" alt="portada" class="carta-cuerpo-contimg-img" width="150px" height="150px">
+                    </div>
                      <h1 class="carta-cuerpo-texto">
                        Desayuno
                      </h1>
-                     <h5 class="carta-cuerpo-texto">
-                        -Torta de tamal
-                     </h5>
-                     <p class="carta-cuerpo-sub">
-                        <ol>
-                            <li>-Agua Fresca
-                            </li>
-                            <li>Tu tamal</li>
-                            <li>Fruta (una naranja)</li>
-                            Horario: 9:30 - 12:30
-                        </ol>  
-                     </p>
+
+                     <div class="carta-menu">
+                        <p class="carta-menu-sub">
+                            <ol>
+                                <li>-Agua Fresca
+                                </li>
+                                <li>Tu tamal</li>
+                                <li>Fruta (una naranja)</li>
+                                Horario: 9:30 - 12:30
+                            </ol>  
+                         </p>
+
+                        </div>
+                    
+                     
+                     
                 </div>
             </article>
 
         </center>
-        <hr>
-        <hr>
-        <hr>
-        <hr>
-        <hr>
-        <hr>
+       
 
         <center>
             <article class="carta">
                 <img src="img/logof.png" alt="portada" height="145px" class="carta-cabeza">
                 <div class="carta-cuerpo">
                     <div class="carta-cuerpo-contimg">
-                        <img src="img/chilaquiles.jpg" alt="portada" class="carta-cuerpo-contimg-img" width="150px">
+                        <img src="img/chilaquiles.jpg" alt="portada" class="carta-cuerpo-contimg-img" width="150px" height="150px">
                      </div>
                      <h1 class="carta-cuerpo-texto">
                        Comida
                      </h1>
-                     <h5 class="carta-cuerpo-texto">
-                        -Chilaquiles
-                     </h5>
+                     
                      <p class="carta-cuerpo-sub">
                         <ol>
-                            <li>Tus chilaquiles</li>
+                            <li>Chilaquiles</li>
                             <li>Agua de sabor</li>
                             <li>Fruta</li>
-                             Horario: 9:30 -12:30
+                             Horario: 2:00 - 5:00
                         </ol>     
                      </p>
                 </div>
@@ -71,33 +72,27 @@
 
         </center>
         
-        <hr >
-        <hr>
-        <hr>
-        <hr>
-        <hr>
-        <hr>
-
-
+       
         <center>
             <article class="carta">
                 <img src="img/logof.png" alt="portada" height="145px" class="carta-cabeza">
                 <div class="carta-cuerpo">
                     <div class="carta-cuerpo-contimg">
-                        <img src="img/lunch.jpg" alt="portada" class="carta-cuerpo-contimg-img" width="150px">
+                        <img src="img/lunch.jpg" alt="portada" class="carta-cuerpo-contimg-img" width="150px" height="150px">
                      </div>
                      <h1 class="carta-cuerpo-texto">
                        Box Lunch
                      </h1>
-                     <h5 class="carta-cuerpo-texto">
-                        -Lunch
-                     </h5>
+                     <div>
+                        
+                     </div>
+                     
                      <p class="carta-cuerpo-sub">
                         <ol>
                             <li>Cuernito</li>
                             <li>Jugo</li>
                             <li>Fruta</li>
-                            Horario: 9:30 - 12:30
+                            Horario: 5:00 - 7:00
                         </ol> 
                      </p>
                 </div>
@@ -114,6 +109,7 @@
         
         <div class="menupalanca"></div> 
         <ul>
+            <!--en la parte de la clase list se activa el color dependiendo la clase-->
             <li class="list active" style="--clr:#f44336;">
                 <a href="#">
                     <span class="icon">
@@ -125,7 +121,7 @@
                 </a>
             </li>
             <li class="list" style="--clr:#ffa117;">
-                <a href="#">
+                <a href="Usuario.html">
                     <span class="icon">
                         <ion-icon name="person-outline"></ion-icon>
                     </span>
@@ -135,7 +131,7 @@
                 </a>
             </li>
             <li class="list" style="--clr:#0fc70f;">
-                <a href="#">
+                <a href="Boletos.html">
                     <span class="icon">
                         <ion-icon name="cart-outline"></ion-icon>       
                     </span>
@@ -145,7 +141,7 @@
                 </a>
             </li>
             <li class="list" style="--clr:#2196f3;">
-                <a href="#">
+                <a href="Quejas.html">
                     <span class="icon">
                         <ion-icon name="chatbubble-ellipses-outline"></ion-icon>
                     </span>
@@ -155,7 +151,7 @@
                 </a>
             </li>
             <li class="list" style="--clr:#b145e9;">
-                <a href="#">
+                <a href="Configuracion.html">
                     <span class="icon">
                         <ion-icon name="settings-outline"></ion-icon>
                     </span>
@@ -169,13 +165,21 @@
     <hr>
 
     <center>
-        *Desarrolladores
-    <ol>
-        <li>-katheri</li>
-        <li>-Aylin</li>
-        <li>-Jonatan</li>
-    </ol>
+        <small>
+            *Desarrolladores
+           <ol>
+           <li>-katheri</li>
+           <li>-Aylin</li>
+           <li>-Jonatan</li>
+            </ol>
+
+        </small>
+        
+
+        
+        
     </center>
+    
     
     
 

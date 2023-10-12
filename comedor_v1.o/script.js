@@ -1,3 +1,4 @@
+
 const menuPalanca =document.querySelector('.menupalanca');
 const navegacion=document.querySelector('.navegacion');
 
