@@ -19,7 +19,7 @@ body
     width: 100%;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 80vh;
     /*
     background-color: aqua;
     margin-left: 1px;
@@ -284,6 +284,29 @@ body
     box-shadow: 2px 2px 15px rgb(0, 0, 0,0.5);
     
 }
+.cajaPrincipalError
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20vh;
+    margin-top: 245px;
+    margin-block-end: 245px;
+    
+}
+
+.cajaUsuarioError
+{
+    background-color: rgb(79, 27, 90);
+    width: 600px;
+    height: 540px;
+    border-radius: 30px;
+    overflow: hidden;
+    top: 500px ;
+    
+    box-shadow: 2px 2px 15px rgb(0, 0, 0,0.5);
+
+}
 
 @media(max-width:991px)
 {
@@ -509,4 +532,25 @@ body
     input{
         padding: 15px;
     }
+}
+
+.cajaForm
+{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(224, 220, 184);
+    width: 1150px;
+    height: 1390px;
+    border-radius: 30px;
+    overflow: hidden;
+    box-shadow: 2px 2px 15px rgb(0, 0, 0,0.5);
+    margin-left: 25px;
+    margin-block-end: 50px;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    
+    
+    
+    
 }

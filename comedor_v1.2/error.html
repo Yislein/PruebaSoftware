@@ -3,34 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Configuracion</title>
+    <title>Usuario</title>
     <link rel="shortcut icon" href="img/logof.png" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <center>
-        <div class="img_portada">
-            <img src="img/uacm_cuau.jpg"  alt="plantel" height="350px" width="1150px"  >
+    
+        <center>
+            <div class="img_portada">
+                <img src="img/uacm_cuau.jpg"  alt="plantel" height="350px" width="1150px"  >
+    
+            </div>
 
-        </div>
+        </center>
 
-        <div>
+        <main class="cajaPrincipalError" >
+            <article class="cajaUsuarioError" >
+                <img src="img/ajolote_uacm.jpg" alt="uacm_mascota" height="120px" width="600px">
+                <form method="post" action="Usuario.html">
+                    <center>
+                        <img src="img/error.png" alt="error" height="290px" width="600px">
+                       <li style="background-color: #f44336" >Error de contraseña o usurio</li>
+                       <li style="background-color: #f44336" > !Intentelo de nuevo!</li>
+                       <input type="submit" value="Regresar" style="background-color: rgb(148, 189, 95); border-radius: 30%; width: 120px; height: 50px;">
+    
+                    </center>
+                    
+                </form>
 
-            <a href="Usuario.html" style="color: #f44336; width: 100%; height: 1100%;">
-                <span class="iconError" style="color: chartreuse; border-radius: 20%; height: 100px;">
-                    <ion-icon name="exit-outline"></ion-icon>
-                </span>
-                <span>
-                    Cerrar Sesion
-                </span>
-            </a>
+            </article>
+            
+
+        </main>
         
 
-        </div>
-        
- 
 
-    </main>
+
+        
+
 
 
     <div class="navegacion">
@@ -38,7 +48,7 @@
         <div class="menupalanca"></div> 
         <ul>
             <li class="list " style="--clr:#f44336;">
-                <a href="menu.html">
+                <a href="index.html">
                     <span class="icon">
                         <ion-icon name="home-outline"></ion-icon>
                     </span>
@@ -47,8 +57,8 @@
                     </span>
                 </a>
             </li>
-            <li class="list" style="--clr:#ffa117;">
-                <a href="usuario-perfil.html">
+            <li class="list active" style="--clr:#ffa117;">
+                <a href="Usuario.html">
                     <span class="icon">
                         <ion-icon name="person-outline"></ion-icon>
                     </span>
@@ -57,18 +67,9 @@
                     </span>
                 </a>
             </li>
-            <li class="list" style="--clr:#0fc70f;">
-                <a href="Boletos.html">
-                    <span class="icon">
-                        <ion-icon name="cart-outline"></ion-icon>       
-                    </span>
-                    <span class="texto">
-                        Boletos
-                    </span>
-                </a>
-            </li>
+            
             <li class="list" style="--clr:#2196f3;">
-                <a href="quejas-perfil.html">
+                <a href="Quejas.html">
                     <span class="icon">
                         <ion-icon name="chatbubble-ellipses-outline"></ion-icon>
                     </span>
@@ -77,16 +78,7 @@
                     </span>
                 </a>
             </li>
-            <li class="list active" style="--clr:#b145e9;">
-                <a href="Configuracion.html">
-                    <span class="icon">
-                        <ion-icon name="settings-outline"></ion-icon>
-                    </span>
-                    <span class="texto">
-                        Configuración
-                    </span>
-                </a>
-            </li>
+            
         </ul>
     </div>
     <hr>
@@ -101,10 +93,7 @@
             </ol>
 
         </small>
-        
-
-        
-        
+                  
     </center>
     
     
