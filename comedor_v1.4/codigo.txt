@@ -1,0 +1,175 @@
+<?php
+//Destinatario del comentario
+$destinatario = 'jonatan.ivan.martinez@estudiante.uacm.edu.mx';
+
+//parametros para concatenar
+//La variable nombre se tomando la variable global POST para poder extraer la variable de de la clase en quejas.html
+$nombre = $_POST['caja-nombre'];
+$texto = $_POST['caja-tex'];
+
+//lo que se va ver desde el cuerpo (header) del correo
+$header = "Quejas y Sujerencias";
+
+//Se crea una nueva variable par que al final del mensaje aparaezca la despedida del mensaje
+
+$mensajeCompleto = $texto . "\n Atentamente" . $nombre;
+
+//Para poder enviar el mensaje se utiliza la funcion mail y se ingresa las variables 
+
+mail($destinatario,$nombre,$mensajeCompleto,$header);
+
+//Se creara un echo el cual envia el mensaje de confirmación
+//edentro agregando el alert para no crear otra pagina
+
+echo("<script>alert('Correo enviado exitosamente')</script>");
+//Se entrudice la funcion setTimeout para el tiempo que se quedara el mensaje y que tiene que regresar a la pagina
+echo("<script>setTimeout(\"location.href='Quejas.html'\",1000)</script>");
+
+
+?>
+
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quejas</title>
+    <link rel="shortcut icon" href="img/logof.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <form action="correos.php" method="post">
+        <center>
+            <div class="img_portada">
+                <img src="img/uacm_cuau.jpg"  alt="plantel" height="350px" width="1150px"  >
+    
+            </div>
+        </center>
+
+
+        <center>
+
+            <main class="cajaPQ">
+                <article class="cajaQuejas">
+                    <img src="img/buzon_quejas.png" alt="Buzon_quejas" height="400px" width="1000">
+                    <form action="" method="get" class="form-example">
+                        <div class="caja-nombre">
+                          <label for="name">Nombre: </label>
+                          <input type="text" name="name" id="name" required />
+                        </div>
+                        <br>
+                        <div class="caja-tex">
+                            comentario:
+                            <br>
+                            <textarea name="comentarios" rows="10" cols="90">Escribe aquí tus comentarios</textarea>
+                        </div>
+                        <center>
+                            <div class="btn-enviar">
+                                <button class="btn-enviar-c">
+                                    Enviar
+                                </button>
+                                
+                              </div>
+
+                        </center>
+                        
+                      </form>
+                   
+                </article>
+
+            </main>
+
+        </center>
+
+        
+        
+        
+
+
+    <div class="navegacion">
+        
+        <div class="menupalanca"></div> 
+        <ul>
+            <li class="list " style="--clr:#f44336;">
+                <a href="index.html">
+                    <span class="icon">
+                        <ion-icon name="home-outline"></ion-icon>
+                    </span>
+                    <span class="texto">
+                        Menu
+                    </span>
+                </a>
+            </li>
+            <li class="list" style="--clr:#ffa117;">
+                <a href="Usuario.html">
+                    <span class="icon">
+                        <ion-icon name="person-outline"></ion-icon>
+                    </span>
+                    <span class="texto">
+                        Usuario
+                    </span>
+                </a>
+            </li>
+            <li class="list" style="--clr:#0fc70f;">
+                <a href="Boletos.html">
+                    <span class="icon">
+                        <ion-icon name="cart-outline"></ion-icon>       
+                    </span>
+                    <span class="texto">
+                        Boletos
+                    </span>
+                </a>
+            </li>
+            <li class="list active" style="--clr:#2196f3;">
+                <a href="Quejas.html">
+                    <span class="icon">
+                        <ion-icon name="chatbubble-ellipses-outline"></ion-icon>
+                    </span>
+                    <span class="texto">
+                    Quejas
+                    </span>
+                </a>
+            </li>
+            <li class="list" style="--clr:#b145e9;">
+                <a href="Configuracion.html">
+                    <span class="icon">
+                        <ion-icon name="settings-outline"></ion-icon>
+                    </span>
+                    <span class="texto">
+                        Configuración
+                    </span>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <hr>
+
+    <center>
+        <small>
+            *Desarrolladores
+           <ol>
+           <li>-katheri</li>
+           <li>-Aylin</li>
+           <li>-Jonatan</li>
+            </ol>
+
+        </small>
+        
+
+        
+        
+    </center>
+    
+    
+</form>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>
