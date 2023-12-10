@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quejas</title>
+    <link rel="shortcut icon" href="../img/logof.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+    
+
+    
+        <center>
+            <div class="img_portada">
+                <img src="../img/uacm_cuau.jpg"  alt="plantel" height="350px" width="1150px"  >
+    
+            </div>
+
+            <div>
+
+                <a href="Usuario.html" style="color: #f44336; width: 100%; height: 1100%;">
+                    <span class="iconError" style="color: chartreuse; border-radius: 20%; height: 100px;">
+                        <ion-icon name="exit-outline"></ion-icon>
+                    </span>
+                    <span>
+                        Cerrar Sesion
+                    </span>
+                </a>
+            
+    
+            </div>
+        </center>
+
+
+        <center>
+
+            <!-- Se Crea el formulario-->
+            <form  action="https://formsubmit.co/jonatan.ivan.martinez@estudiante.uacm.edu.mx" method="POST">> 
+                
+                
+                <!--<input type="hidden" name="_cc" value="aylin.tania.pacheco@estudiante.uacm.edu.mx, katheri.lopez@estudiante.uacm.edu.mx">-->
+
+
+                <div class="cajaPQ">
+                    <img src="../img/buzon_quejas.png" alt="Buzon_quejas" height="550px" width="1400">
+
+                    <h2 class="textoCQ">Quejas y sugerencias</h2>
+                    <!--Este label dara referencia al nombre-->
+                    <label class="textoqs" for="name">Nombre</label>
+                    <!--Dara la caja donde se podra escribir el nombre-->
+                    <input class="cajaQS" type="text" name="name" id="name" placeholder="Nombre">
+
+                    <!--Recuerda que el placeholder sirve para que en la caja se visualice que ingresas-->
+
+                    <label class="textoqs" for="phone">Telefono</label>
+                    <input class="cajaQS" type="tel" name="phone" id="phone" placeholder="Telefono">
+
+                    <label  class="textoqs" for="email">Email</label>
+                    <input class="cajaQS" type="email" name="email" id="email" placeholder="Email">
+
+                    <label class="textoqs" for="message">Mensaje</label>
+                    <textarea class="cajaQS" name="message" id="message" cols="30" rows="10" placeholder="Escriba su mensaje:"></textarea>
+                    <!--Es el boton para poder enviar el formulario ya que el type esta de tipo submit-->
+                    <input class="btn-enviar" type="submit" value="Enviar">
+
+                </div>
+
+            </form>
+
+        </center>
+
+        
+        
+        
+
+
+    <div class="navegacion">
+        
+        <div class="menupalanca"></div> 
+        <ul>
+            <li class="list " style="--clr:#f44336;">
+                <a href="menu.html">
+                    <span class="icon">
+                        <ion-icon name="home-outline"></ion-icon>
+                    </span>
+                    <span class="texto">
+                        Menu
+                    </span>
+                </a>
+            </li>
+            <li class="list" style="--clr:#ffa117;">
+                <a href="usuario-perfil.html">
+                    <span class="icon">
+                        <ion-icon name="person-outline"></ion-icon>
+                    </span>
+                    <span class="texto">
+                        Usuario
+                    </span>
+                </a>
+            </li>
+            <li class="list" style="--clr:#0fc70f;">
+                <a href="Boletos.html">
+                    <span class="icon">
+                        <ion-icon name="cart-outline"></ion-icon>       
+                    </span>
+                    <span class="texto">
+                        Boletos
+                    </span>
+                </a>
+            </li>
+            <li class="list active" style="--clr:#2196f3;">
+                <a href="quejas-perfil.html">
+                    <span class="icon">
+                        <ion-icon name="chatbubble-ellipses-outline"></ion-icon>
+                    </span>
+                    <span class="texto">
+                    Quejas
+                    </span>
+                </a>
+            </li>
+            <li class="list" style="--clr:#b145e9;">
+                <a href="Configuracion.html">
+                    <span class="icon">
+                        <ion-icon name="settings-outline"></ion-icon>
+                    </span>
+                    <span class="texto">
+                        Configuración
+                    </span>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <hr>
+
+    <center>
+        <small>
+            *Desarrolladores
+           <ol>
+           <li>-katheri</li>
+           <li>-Aylin</li>
+           <li>-Jonatan</li>
+            </ol>
+
+        </small>
+        
+
+        
+        
+    </center>
+    
+    
+
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="../controlador/script.js"></script>
+
+</body>
+</html>
