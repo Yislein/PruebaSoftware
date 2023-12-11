@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comedor</title>
+    <link rel="shortcut icon" href="../img/logof.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <center>
+        <div class="img_portada">
+            <img src="../img/uacm_cuau.jpg"  alt="plantel" height="350px" width="1150px"  >
+
+        </div>
+
+        <div>
+
+            <a href="Usuario.html" style="color: #f44336; width: 100%; height: 1100%;">
+                <span class="iconError" style="color: chartreuse; border-radius: 20%; height: 100px;">
+                    <ion-icon name="exit-outline"></ion-icon>
+                </span>
+                <span>
+                    Cerrar Sesion
+                </span>
+            </a>
+        
+
+        </div>
+        
+    </center>
+    <main class="contenedor">
+        <center>
+            <article class="carta" >
+                <img src="../img/logof.png" alt="portada" height="145px" class="carta-cabeza">
+                <div class="carta-cuerpo">
+                    <div class="carta-cuerpo-contimg">
+                         <img src="../img/arroz.jpg" alt="portada" class="carta-cuerpo-contimg-img" width="150px" height="150px">
+                    </div>
+                     <h1 class="carta-cuerpo-texto">
+                       Desayuno
+                     </h1>
+
+                     <div class="carta-menu">
+                        <p class="carta-menu-sub">
+                            <ol>
+                                <ol id="desayuno">
+                                    <li>Elemento 1</li>
+                                    <li>Elemento 2</li>
+                                    <li>Elemento 3</li>
+                                </ol> 
+                         </p>
+
+                        </div>
+                    
+                     
+                     
+                </div>
+            </article>
+
+        </center>
+       
+
+        <center>
+            <article class="carta">
+                <img src="../img/logof.png" alt="portada" height="145px" class="carta-cabeza">
+                <div class="carta-cuerpo">
+                    <div class="carta-cuerpo-contimg">
+                        <img src="../img/chilaquiles.jpg" alt="portada" class="carta-cuerpo-contimg-img" width="150px" height="150px">
+                     </div>
+                     <h1 class="carta-cuerpo-texto">
+                       Comida
+                     </h1>
+                     
+                     <p class="carta-cuerpo-sub">
+                        <ol id="comida">
+                            <li>Elemento 1</li>
+                            <li>Elemento 2</li>
+                            <li>Elemento 3</li>
+                        </ol>    
+                     </p>
+                </div>
+            </article>
+
+        </center>
+        
+       
+        <center>
+            <article class="carta">
+                <img src="../img/logof.png" alt="portada" height="145px" class="carta-cabeza">
+                <div class="carta-cuerpo">
+                    <div class="carta-cuerpo-contimg">
+                        <img src="../img/lunch.jpg" alt="portada" class="carta-cuerpo-contimg-img" width="150px" height="150px">
+                     </div>
+                     <h1 class="carta-cuerpo-texto">
+                       Box Lunch
+                     </h1>
+                     <div>
+                        
+                     </div>
+                     
+                     <p class="carta-cuerpo-sub">
+                        <ol id="boxlunch">
+                            <li>Elemento 1</li>
+                            <li>Elemento 2</li>
+                            <li>Elemento 3</li>
+                        </ol>
+                     </p>
+                </div>
+            </article>
+
+        </center>
+
+        <script>
+            // Cargar datos al cargar la página
+               // Cargar datos al cargar la página
+               window.onload = function() {
+    // Cargar datos del desayuno
+    const valorCampo1 = localStorage.getItem('campo1Valor');
+    const valorCampo2 = localStorage.getItem('campo2Valor');
+    const valorCampo3 = localStorage.getItem('campo3Valor');
+
+    const listaDesayuno = document.getElementById('desayuno');
+    const elementosLiDesayuno = listaDesayuno.getElementsByTagName('li');
+
+    if (elementosLiDesayuno.length >= 3 && valorCampo1 && valorCampo2 && valorCampo3) {
+        elementosLiDesayuno[0].textContent = valorCampo1;
+        elementosLiDesayuno[1].textContent = valorCampo2;
+        elementosLiDesayuno[2].textContent = valorCampo3;
+    }
+
+    // Cargar datos de comida
+    const valorCampo4 = localStorage.getItem('campo4Valor');
+    const valorCampo5 = localStorage.getItem('campo5Valor');
+    const valorCampo6 = localStorage.getItem('campo6Valor');
+
+    const listaComida = document.getElementById('comida');
+    const elementosLiComida = listaComida.getElementsByTagName('li');
+
+    if (elementosLiComida.length >= 3 && valorCampo4 && valorCampo5 && valorCampo6) {
+        elementosLiComida[0].textContent = valorCampo4;
+        elementosLiComida[1].textContent = valorCampo5;
+        elementosLiComida[2].textContent = valorCampo6;
+    }
+
+    // Cargar datos de boxlunch
+    const valorCampo7 = localStorage.getItem('campo7Valor');
+    const valorCampo8 = localStorage.getItem('campo8Valor');
+    const valorCampo9 = localStorage.getItem('campo9Valor');
+
+    const listaBoxLunch = document.getElementById('boxlunch');
+    const elementosLiBoxLunch = listaBoxLunch.getElementsByTagName('li');
+
+    if (elementosLiBoxLunch.length >= 3 && valorCampo7 && valorCampo8 && valorCampo9) {
+        elementosLiBoxLunch[0].textContent = valorCampo7;
+        elementosLiBoxLunch[1].textContent = valorCampo8;
+        elementosLiBoxLunch[2].textContent = valorCampo9;
+    }
+};
+        </script>
+    
+
+        
+
+    </main>
+
+
+    <div class="navegacion">
+        
+        <div class="menupalanca"></div> 
+        <ul>
+            <!--en la parte de la clase list se activa el color dependiendo la clase-->
+            <li class="list active" style="--clr:#f44336;">
+                <a href="#">
+                    <span class="icon">
+                        <ion-icon name="home-outline"></ion-icon>
+                    </span>
+                    <span class="texto">
+                        Menu
+                    </span>
+                </a>
+            </li>
+            <li class="list" style="--clr:#ffa117;">
+                <a href="Usuario-perfil.html">
+                    <span class="icon">
+                        <ion-icon name="person-outline"></ion-icon>
+                    </span>
+                    <span class="texto">
+                        Usuario
+                    </span>
+                </a>
+            </li>
+            <li class="list" style="--clr:#0fc70f;">
+                <a href="Boletos.html">
+                    <span class="icon">
+                        <ion-icon name="cart-outline"></ion-icon>       
+                    </span>
+                    <span class="texto">
+                        Boletos
+                    </span>
+                </a>
+            </li>
+            <li class="list" style="--clr:#2196f3;">
+                <a href="quejas-perfil.html">
+                    <span class="icon">
+                        <ion-icon name="chatbubble-ellipses-outline"></ion-icon>
+                    </span>
+                    <span class="texto">
+                    Quejas
+                    </span>
+                </a>
+            </li>
+            <li class="list" style="--clr:#b145e9;">
+                <a href="Configuracion.html">
+                    <span class="icon">
+                        <ion-icon name="settings-outline"></ion-icon>
+                    </span>
+                    <span class="texto">
+                        Configuración
+                    </span>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <hr>
+
+    <center>
+        <small>
+            *Desarrolladores
+           <ol>
+           <li>-katheri</li>
+           <li>-Aylin</li>
+           <li>-Jonatan</li>
+            </ol>
+
+        </small>
+        
+
+        
+        
+    </center>
+    
+    
+    
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="../controlador/script.js"></script>
+</body>
+</html>
