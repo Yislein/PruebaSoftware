@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Configuracion</title>
+    <link rel="shortcut icon" href="../img/logof.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../controlador/main.js" ></script>
+</head>
+<body>
+    <center>
+        <div class="img_portada">
+            <img src="../img/uacm_cuau.jpg"  alt="plantel" height="350px" width="1150px"  >
+
+        </div>
+
+        <div>
+            <a href="Usuario.html" style="color: #f44336; width: 100%; height: 1100%;">
+                <span class="iconError" style="color: chartreuse; border-radius: 20%; height: 100px;">
+                    <ion-icon name="exit-outline"></ion-icon>
+                </span>
+                <span>
+                    Cerrar Sesion
+                </span>
+            </a>
+         </div>
+
+         <div>
+            <a href="Configuracion.html" style="color: #f44336; width: 100%; height: 1100%;">
+                <span class="iconError" style="color: chartreuse; border-radius: 20%; height: 100px;">
+                    <ion-icon name="arrow-undo-outline"></ion-icon>
+                </span>
+                <span>
+                    Regresar
+                </span>
+            </a>
+         </div>
+
+         <center>
+            <div>
+                <h1>Desayuno</h1>
+                
+            <form id="Desayuno">
+                <label for="campo1">Campo 1:</label>
+                <input type="text" id="campo1" name="campo1">
+                <label for="campo2">Campo 2:</label>
+                <input type="text" id="campo2" name="campo2">
+                <label for="campo3">Campo 3:</label>
+                <input type="text" id="campo3" name="campo3">
+                <button type="button" onclick="guardarDesayuno()">Modificar Desayuno</button>
+            </form>
+
+            </div>
+
+            <div>
+                <h1>Comida</h1>
+                
+            <form id="Comida">
+                <label for="campo4">Campo 1:</label>
+                <input type="text" id="campo4" name="campo4">
+                <label for="campo5">Campo 2:</label>
+                <input type="text" id="campo5" name="campo5">
+                <label for="campo6">Campo 3:</label>
+                <input type="text" id="campo6" name="campo6">
+                <button type="button" onclick="guardarComida()">Modificar Comida</button>
+            </form>
+
+            </div>
+
+            <div>
+                <h1>Box Lunch</h1>
+                
+            <form id="BoxLunch">
+                <label for="campo7">Campo 1:</label>
+                <input type="text" id="campo7" name="campo7">
+                <label for="campo8">Campo 2:</label>
+                <input type="text" id="campo8" name="campo8">
+                <label for="campo9">Campo 3:</label>
+                <input type="text" id="campo9" name="campo9">
+                <button type="button" onclick="guardarBoxLunch()">Modificar Box Lunch</button>
+            </form>
+
+            </div>
+
+        
+            <script>
+                function guardarDesayuno() {
+                    const valorCampo1 = document.getElementById('campo1').value;
+                    const valorCampo2 = document.getElementById('campo2').value;
+                    const valorCampo3 = document.getElementById('campo3').value;
+        
+                    // Guardar los valores en localStorage
+                    localStorage.setItem('campo1Valor', valorCampo1);
+                    localStorage.setItem('campo2Valor', valorCampo2);
+                    localStorage.setItem('campo3Valor', valorCampo3);
+
+                     // Mostrar alerta
+                    alert('Lista de desayuno guardada con éxito');
+                }
+
+                
+                function guardarComida() {
+                    const valorCampo4 = document.getElementById('campo4').value;
+                    const valorCampo5 = document.getElementById('campo5').value;
+                     const valorCampo6 = document.getElementById('campo6').value;
+
+                    // Guardar los valores en localStorage
+                    localStorage.setItem('campo4Valor', valorCampo4);
+                    localStorage.setItem('campo5Valor', valorCampo5);
+                    localStorage.setItem('campo6Valor', valorCampo6);
+
+                    alert('Lista de comida guardada con éxito');
+                }
+
+                function guardarBoxLunch() {
+                     const valorCampo7 = document.getElementById('campo7').value;
+                    const valorCampo8 = document.getElementById('campo8').value;
+                    const valorCampo9 = document.getElementById('campo9').value;
+
+                    // Guardar los valores en localStorage
+                    localStorage.setItem('campo7Valor', valorCampo7);
+                    localStorage.setItem('campo8Valor', valorCampo8);
+                    localStorage.setItem('campo9Valor', valorCampo9);
+
+                    alert('Lista de Box Lunch guardada con éxito');
+                    }
+
+                    
+
+            </script>
+
+<script>
+                
+            
+    // Obtener referencias a las cajas de texto
+    const campo1 = document.getElementById('campo1');
+    const campo2 = document.getElementById('campo2');
+    const campo3 = document.getElementById('campo3');
+
+    // Función para verificar el contenido y notificar a los observadores
+    
+    function verificarTexto() {
+        itemsSubject.notify(); // Notificar a los observadores
+
+        // Llamar al método para mostrar "sin servicio" si corresponde
+        sinServicioObserver.notify();
+    }
+
+    // Agregar evento keyup a las cajas de texto para verificar el texto ingresado
+    campo1.addEventListener('keyup', verificarTexto);
+    campo2.addEventListener('keyup', verificarTexto);
+    campo3.addEventListener('keyup', verificarTexto);
+</script>
+
+            
+            
+        </center>
+
+        
+
+        
+
+        
+ 
+
+    </main>
+
+
+    <div class="navegacion">
+        
+        <div class="menupalanca"></div> 
+        <ul>
+            <li class="list " style="--clr:#f44336;">
+                <a href="menu.html">
+                    <span class="icon">
+                        <ion-icon name="home-outline"></ion-icon>
+                    </span>
+                    <span class="texto">
+                        Menu
+                    </span>
+                </a>
+            </li>
+            <li class="list" style="--clr:#ffa117;">
+                <a href="usuario-perfil.html">
+                    <span class="icon">
+                        <ion-icon name="person-outline"></ion-icon>
+                    </span>
+                    <span class="texto">
+                        Usuario
+                    </span>
+                </a>
+            </li>
+            <li class="list" style="--clr:#0fc70f;">
+                <a href="Boletos.html">
+                    <span class="icon">
+                        <ion-icon name="cart-outline"></ion-icon>       
+                    </span>
+                    <span class="texto">
+                        Boletos
+                    </span>
+                </a>
+            </li>
+            <li class="list" style="--clr:#2196f3;">
+                <a href="quejas-perfil.html">
+                    <span class="icon">
+                        <ion-icon name="chatbubble-ellipses-outline"></ion-icon>
+                    </span>
+                    <span class="texto">
+                    Quejas
+                    </span>
+                </a>
+            </li>
+            <li class="list active" style="--clr:#b145e9;">
+                <a href="Configuracion.html">
+                    <span class="icon">
+                        <ion-icon name="settings-outline"></ion-icon>
+                    </span>
+                    <span class="texto">
+                        Configuración
+                    </span>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <hr>
+
+    <center>
+        <small>
+            *Desarrolladores
+           <ol>
+           <li>-katheri</li>
+           <li>-Aylin</li>
+           <li>-Jonatan</li>
+            </ol>
+
+        </small>
+        
+
+        
+        
+    </center>
+    
+    
+    
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="../controlador/script.js"></script>
+</body>
+</html>

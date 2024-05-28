@@ -427,4 +427,65 @@ body {
   align-items: center;
   justify-content: center;
   text-align: left;
+}
+
+.usuarioInfo {
+  display: flex;
+  flex-direction: column;
+}
+
+.usuarioCampo {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.campoTitulo {
+  background-color: #f0f0f0;
+  padding: 5px;
+  border-bottom: 1px solid #ccc;
+  border-radius: 5px 5px 0 0;
+}
+
+.campoValor {
+  padding: 5px;
+}
+
+.formularioLogin {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.formularioGrupo {
+  margin-bottom: 20px;
+}
+
+.formularioEtiqueta {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.formularioEntrada {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.formularioBoton {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.formularioBoton:hover {
+  background-color: #0056b3;
 }/*# sourceMappingURL=style.css.map */
